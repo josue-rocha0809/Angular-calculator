@@ -8,5 +8,9 @@
       </div>
     </div>
   </div>
-  <app-form></app-form>
+  <app-form (result)="resultadd=($event)"
+  ></app-form>
+
+  <app-result [resAdd] ="resultadd"
+  ></app-result>
 </div>
